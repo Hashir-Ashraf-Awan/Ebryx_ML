@@ -1,39 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Mall Customer Cluster Prediction</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff5f6d, #ffc371);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fdfdfd;
+            padding: 40px 35px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 500px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #ff5f6d;
+            font-size: 26px;
+            letter-spacing: 1px;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+            color: #444;
+        }
+
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 12px 14px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            font-size: 15px;
+            background: #f9f9f9;
+            transition: 0.3s;
+        }
+
+        input[type="number"]:focus,
+        select:focus {
+            border-color: #ff5f6d;
+            outline: none;
+            background-color: #fff;
+        }
+
+        .gender-options {
+            margin-bottom: 20px;
+        }
+
+        .gender-options label {
+            margin-right: 25px;
+            font-weight: normal;
+            font-size: 15px;
+            color: #333;
+        }
+
+        input[type="radio"] {
+            margin-right: 6px;
+            transform: scale(1.1);
+        }
+
+        input[type="submit"] {
+            background-color: #ff5f6d;
+            color: white;
+            border: none;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 12px;
+            width: 100%;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 15px rgba(255, 95, 109, 0.4);
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e04858;
+            transform: translateY(-1px);
+        }
+
+        .result {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #e6ffe6;
+            border-left: 5px solid #28a745;
+            border-radius: 10px;
+            color: #155724;
+            font-weight: 600;
+            font-size: 1.2em;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h2>Predict Customer Segment</h2>
+    <div class="container">
+        <h2>🎯 Mall Customer Cluster Prediction</h2>
 
-    <form method="post" action="/predict">
-        <label>Age:</label><br>
-        <input type="number" name="Age" step="1" required><br><br>
+        <form method="post" action="/predict">
+            <label for="age">Age:</label>
+            <input type="number" name="Age" id="age" required>
 
-        <label>Annual Income (k$):</label><br>
-        <input type="number" name="Income" step="1" required><br><br>
+            <label for="income">Annual Income (k$):</label>
+            <input type="number" name="Income" id="income" required>
 
-        <label>Gender (0 = Female, 1 = Male):</label><br>
-        <input type="number" name="Gender" min="0" max="1" required><br><br>
+            <label>Gender:</label>
+            <div class="gender-options">
+                <label><input type="radio" name="Gender" value="0" required> Female</label>
+                <label><input type="radio" name="Gender" value="1" required> Male</label>
+            </div>
 
-        <label>Spending Score (1-100):</label><br>
-        <input type="number" name="Spending" step="1" required><br><br>
+            <label for="spending">Spending Score (1-100):</label>
+            <input type="number" name="Spending" id="spending" required>
 
-        <label>Select Model:</label><br>
-        <select name="model_name" required>
-            {% for model in models %}
-                <option value="{{ model }}"
-                    {% if selected_model == model %}selected{% endif %}>
-                    {{ model }}
-                </option>
-            {% endfor %}
-        </select><br><br>
+            <label for="model">Select Model:</label>
+            <select name="model_name" id="model" required>
+                {% for model in models %}
+                    <option value="{{ model }}"
+                        {% if selected_model == model %}selected{% endif %}>
+                        {{ model }}
+                    </option>
+                {% endfor %}
+            </select>
 
-        <input type="submit" value="Predict">
-    </form>
+            <input type="submit" value="Predict">
+        </form>
 
-    {% if result is defined %}
-        <h3>Predicted Segment: {{ result }}</h3>
-    {% endif %}
+        {% if result is defined %}
+            <div class="result">
+                ✅ Predicted Segment: {{ result }}
+            </div>
+        {% endif %}
+    </div>
 </body>
 </html>
