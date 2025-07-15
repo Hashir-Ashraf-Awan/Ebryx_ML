@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mall Customer Cluster Prediction</title>
+</head>
+<body>
+    <h2>Predict Customer Segment</h2>
+
+    <form method="post" action="/predict">
+        <label>Age:</label><br>
+        <input type="number" name="Age" step="1" required><br><br>
+
+        <label>Annual Income (k$):</label><br>
+        <input type="number" name="Income" step="1" required><br><br>
+
+        <label>Gender (0 = Female, 1 = Male):</label><br>
+        <input type="number" name="Gender" min="0" max="1" required><br><br>
+
+        <label>Spending Score (1-100):</label><br>
+        <input type="number" name="Spending" step="1" required><br><br>
+
+        <label>Select Model:</label><br>
+        <select name="model_name" required>
+            {% for model in models %}
+                <option value="{{ model }}"
+                    {% if selected_model == model %}selected{% endif %}>
+                    {{ model }}
+                </option>
+            {% endfor %}
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if result is defined %}
+        <h3>Predicted Segment: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
