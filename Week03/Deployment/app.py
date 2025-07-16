@@ -16,7 +16,6 @@ models = {
     "Decision Tree": joblib.load("dt_model.pkl")
 }
 
-# Label mapping (edit as per your cluster labeling)
 label_map = {
     0: "Frugal Elders",
     1: "Impulsive Youth",
@@ -42,7 +41,7 @@ def predict(
 ):
     try:
         # Prepare input
-        input_data = np.array([[Age, Income, Gender, Spending]])
+        input_data = np.array([[Gender, Age, Income, Spending]])
         scaled_input = scaler.transform(input_data)
 
         # Get selected model
@@ -52,7 +51,8 @@ def predict(
 
         # Predict
         pred = model.predict(scaled_input)[0]
-        cluster = label_map.get(pred, f"Cluster {pred}")
+        print(scaled_input)
+        cluster = label_map.get(pred, f" {pred}")
 
         return templates.TemplateResponse("index.html", {
             "request": request,
