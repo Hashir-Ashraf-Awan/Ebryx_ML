@@ -125,8 +125,8 @@
 
             <label>Gender:</label>
             <div class="gender-options">
-                <label><input type="radio" name="Gender" value="0" required> Female</label>
-                <label><input type="radio" name="Gender" value="1" required> Male</label>
+                <label><input type="radio" name="Gender" value="0" required> Male</label>
+                <label><input type="radio" name="Gender" value="1" required> Female</label>
             </div>
 
             <label for="spending">Spending Score (1-100):</label>
@@ -144,7 +144,6 @@
 
             <input type="submit" value="Predict">
         </form>
-
         {% if result is defined %}
             <div class="result">
                 ✅ Predicted Segment: {{ result }}
