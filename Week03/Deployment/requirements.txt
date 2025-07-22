@@ -1,8 +1,0 @@
-fastapi
-uvicorn
-scikit-learn
-pandas
-matplotlib
-seaborn
-jinja2
-joblib
