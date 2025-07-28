@@ -1,0 +1,128 @@
+Actual,Predicted,Model
+Enthusiastic Shoppers,Enthusiastic Shoppers,KNN
+Impulsive Youth,Impulsive Youth,KNN
+Conservative Adults,Conservative Adults,KNN
+Enthusiastic Shoppers,Enthusiastic Shoppers,KNN
+Frugal Elders,Frugal Elders,KNN
+Frugal Elders,Frugal Elders,KNN
+Conservative Adults,Conservative Adults,KNN
+Frugal Elders,Frugal Elders,KNN
+Frugal Elders,Frugal Elders,KNN
+Impulsive Youth,Impulsive Youth,KNN
+Frugal Elders,Frugal Elders,KNN
+Enthusiastic Shoppers,Enthusiastic Shoppers,KNN
+Frugal Elders,Frugal Elders,KNN
+Conservative Adults,Conservative Adults,KNN
+Impulsive Youth,Impulsive Youth,KNN
+Impulsive Youth,Impulsive Youth,KNN
+Impulsive Youth,Impulsive Youth,KNN
+Impulsive Youth,Impulsive Youth,KNN
+Impulsive Youth,Impulsive Youth,KNN
+Frugal Elders,Frugal Elders,KNN
+Enthusiastic Shoppers,Enthusiastic Shoppers,KNN
+Impulsive Youth,Impulsive Youth,KNN
+Frugal Elders,Frugal Elders,KNN
+Enthusiastic Shoppers,Enthusiastic Shoppers,KNN
+Conservative Adults,Conservative Adults,KNN
+Enthusiastic Shoppers,Enthusiastic Shoppers,KNN
+Conservative Adults,Conservative Adults,KNN
+Impulsive Youth,Impulsive Youth,KNN
+Conservative Adults,Conservative Adults,KNN
+Impulsive Youth,Impulsive Youth,KNN
+Impulsive Youth,Impulsive Youth,KNN
+Conservative Adults,Conservative Adults,KNN
+Impulsive Youth,Impulsive Youth,KNN
+Frugal Elders,Frugal Elders,KNN
+Conservative Adults,Conservative Adults,KNN
+Impulsive Youth,Impulsive Youth,KNN
+Conservative Adults,Conservative Adults,KNN
+Enthusiastic Shoppers,Enthusiastic Shoppers,KNN
+Impulsive Youth,Conservative Adults,KNN
+Frugal Elders,Frugal Elders,KNN
+Enthusiastic Shoppers,Enthusiastic Shoppers,Naive Bayes
+Impulsive Youth,Impulsive Youth,Naive Bayes
+Conservative Adults,Impulsive Youth,Naive Bayes
+Enthusiastic Shoppers,Enthusiastic Shoppers,Naive Bayes
+Frugal Elders,Frugal Elders,Naive Bayes
+Frugal Elders,Frugal Elders,Naive Bayes
+Conservative Adults,Conservative Adults,Naive Bayes
+Frugal Elders,Frugal Elders,Naive Bayes
+Frugal Elders,Frugal Elders,Naive Bayes
+Impulsive Youth,Impulsive Youth,Naive Bayes
+Frugal Elders,Frugal Elders,Naive Bayes
+Enthusiastic Shoppers,Enthusiastic Shoppers,Naive Bayes
+Frugal Elders,Frugal Elders,Naive Bayes
+Conservative Adults,Conservative Adults,Naive Bayes
+Impulsive Youth,Impulsive Youth,Naive Bayes
+Impulsive Youth,Impulsive Youth,Naive Bayes
+Impulsive Youth,Impulsive Youth,Naive Bayes
+Impulsive Youth,Impulsive Youth,Naive Bayes
+Impulsive Youth,Impulsive Youth,Naive Bayes
+Frugal Elders,Frugal Elders,Naive Bayes
+Enthusiastic Shoppers,Enthusiastic Shoppers,Naive Bayes
+Impulsive Youth,Impulsive Youth,Naive Bayes
+Frugal Elders,Frugal Elders,Naive Bayes
+Enthusiastic Shoppers,Enthusiastic Shoppers,Naive Bayes
+Conservative Adults,Conservative Adults,Naive Bayes
+Enthusiastic Shoppers,Enthusiastic Shoppers,Naive Bayes
+Conservative Adults,Conservative Adults,Naive Bayes
+Impulsive Youth,Impulsive Youth,Naive Bayes
+Conservative Adults,Conservative Adults,Naive Bayes
+Impulsive Youth,Impulsive Youth,Naive Bayes
+Impulsive Youth,Impulsive Youth,Naive Bayes
+Conservative Adults,Conservative Adults,Naive Bayes
+Impulsive Youth,Impulsive Youth,Naive Bayes
+Frugal Elders,Frugal Elders,Naive Bayes
+Conservative Adults,Conservative Adults,Naive Bayes
+Impulsive Youth,Impulsive Youth,Naive Bayes
+Conservative Adults,Conservative Adults,Naive Bayes
+Enthusiastic Shoppers,Enthusiastic Shoppers,Naive Bayes
+Impulsive Youth,Impulsive Youth,Naive Bayes
+Frugal Elders,Frugal Elders,Naive Bayes
+Enthusiastic Shoppers,Enthusiastic Shoppers,Decision Tree
+Impulsive Youth,Impulsive Youth,Decision Tree
+Conservative Adults,Impulsive Youth,Decision Tree
+Enthusiastic Shoppers,Frugal Elders,Decision Tree
+Frugal Elders,Frugal Elders,Decision Tree
+Frugal Elders,Frugal Elders,Decision Tree
+Conservative Adults,Conservative Adults,Decision Tree
+Frugal Elders,Frugal Elders,Decision Tree
+Frugal Elders,Frugal Elders,Decision Tree
+Impulsive Youth,Impulsive Youth,Decision Tree
+Frugal Elders,Enthusiastic Shoppers,Decision Tree
+Enthusiastic Shoppers,Enthusiastic Shoppers,Decision Tree
+Frugal Elders,Frugal Elders,Decision Tree
+Conservative Adults,Conservative Adults,Decision Tree
+Impulsive Youth,Impulsive Youth,Decision Tree
+Impulsive Youth,Impulsive Youth,Decision Tree
+Impulsive Youth,Impulsive Youth,Decision Tree
+Impulsive Youth,Impulsive Youth,Decision Tree
+Impulsive Youth,Impulsive Youth,Decision Tree
+Frugal Elders,Frugal Elders,Decision Tree
+Enthusiastic Shoppers,Enthusiastic Shoppers,Decision Tree
+Impulsive Youth,Impulsive Youth,Decision Tree
+Frugal Elders,Frugal Elders,Decision Tree
+Enthusiastic Shoppers,Enthusiastic Shoppers,Decision Tree
+Conservative Adults,Conservative Adults,Decision Tree
+Enthusiastic Shoppers,Enthusiastic Shoppers,Decision Tree
+Conservative Adults,Conservative Adults,Decision Tree
+Impulsive Youth,Impulsive Youth,Decision Tree
+Conservative Adults,Conservative Adults,Decision Tree
+Impulsive Youth,Impulsive Youth,Decision Tree
+Impulsive Youth,Impulsive Youth,Decision Tree
+Conservative Adults,Conservative Adults,Decision Tree
+Impulsive Youth,Impulsive Youth,Decision Tree
+Frugal Elders,Frugal Elders,Decision Tree
+Conservative Adults,Conservative Adults,Decision Tree
+Impulsive Youth,Impulsive Youth,Decision Tree
+Conservative Adults,Conservative Adults,Decision Tree
+Enthusiastic Shoppers,Enthusiastic Shoppers,Decision Tree
+Impulsive Youth,Conservative Adults,Decision Tree
+Frugal Elders,Frugal Elders,Decision Tree
+Enthusiastic Shoppers,Enthusiastic Shoppers,KNN
+Enthusiastic Shoppers,Enthusiastic Shoppers,KNN
+Enthusiastic Shoppers,Enthusiastic Shoppers,KNN
+Frugal Elders,Frugal Elders,KNN
+Enthusiastic Shoppers,Enthusiastic Shoppers,KNN
+Frugal Elders,Frugal Elders,KNN
+Enthusiastic Shoppers,Enthusiastic Shoppers,KNN
